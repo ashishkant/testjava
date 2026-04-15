@@ -9,6 +9,11 @@
 
     <!-- Define your beans here -->
     
+    <!-- Message bean definition -->
+    <bean id="message" class="com.example.demo.Message">
+        <property name="msg" value="this is a java demo project"/>
+    </bean>
+    
     <!-- Example bean definition -->
     <!--
     <bean id="myBean" class="com.example.MyClass">
