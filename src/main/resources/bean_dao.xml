@@ -10,16 +10,16 @@
     <!-- DataSource for SQLite database -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.sqlite.JDBC"/>
-        <property name="url" value="jdbc:sqlite:school.db"/>
+        <property name="url" value="jdbc:sqlite:src/main/resources/school.db"/>
     </bean>
 
-    <!-- Hibernate SessionFactory -->
+    <!-- Hibernate SessionFactory for Hibernate 6 -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan" value="com.example.models"/>
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</prop>
+                <prop key="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
             </props>
