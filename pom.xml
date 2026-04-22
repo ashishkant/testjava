@@ -34,6 +34,27 @@
             <version>5.3.20</version>
         </dependency>
         
+        <!-- Spring JDBC for DAO support -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.20</version>
+        </dependency>
+        
+        <!-- Spring ORM for Hibernate integration -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>5.3.20</version>
+        </dependency>
+        
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
+        
         <!-- SQLite JDBC Driver -->
         <dependency>
             <groupId>org.xerial</groupId>
